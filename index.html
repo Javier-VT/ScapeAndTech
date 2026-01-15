@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Digamma - Servidor de Minecraft Parasites & Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">PROYECTO <span class="text-highlight">DIGAMMA</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-server" class="nav-link">Información</a></li>
+                <li><a href="#mecanicas" class="nav-link">Mecánicas y Dificultad</a></li>
+                <li><a href="#discord" class="nav-link">Discord</a></li>
+                <li><a href="#descarga" class="nav-link btn-download-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop playsinline id="myVideo" class="back-video">
+            <source src="src/background.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+        
+        <div class="hero-content container fade-in">
+            <img src="src/title.png" alt="Logo Proyecto Digamma" class="hero-logo">
+            <h1>SOBREVIVE A LA <span class="text-danger">INFECCIÓN</span></h1>
+            <p class="hero-subtitle">HBM's Nuclear Tech + Scape and Run: Parasites. Tienes 60 días antes de que llegue del sistema Digamma.</p>
+            <div class="hero-buttons">
+                <a href="#descarga" class="btn btn-primary">Empezar la Misión <i class="fas fa-download"></i></a>
+                <a href="#trailer" class="btn btn-secondary">Ver Tráiler <i class="fas fa-play"></i></a>
+            </div>
+            <p class="server-ip"><i class="fas fa-server"></i> IP: Próximamente</p>
+        </div>
+    </section>
+
+    <section id="sobre-server" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title fade-in">Información del <span class="text-highlight">Servidor</span></h2>
+            
+            <div class="about-grid fade-in">
+                <div class="about-text">
+                    <h3>Enfoque Multijugador</h3>
+                    <p>Este modpack, especialmente en sus primeras versiones, está enfocado en un <strong>SERVER</strong>. Tenlo en cuenta si lo juegas solo. Incluye características para multijugador como facciones, voice chat y más.</p>
+                    <p>El lore se contará a medida que las misiones avancen, aunque se puede inferir viendo las estructuras custom y el entorno post-apocalíptico.</p>
+                    
+                    <div class="info-box">
+                        <i class="fas fa-lightbulb text-highlight"></i>
+                        <p><strong>Consejo rápido:</strong> Puedes pregenerar el mundo colocando en el chat: <code>/pregen stat gen radius square 0 0 (cantidad de chunks)</code></p>
+                    </div>
+                </div>
+                
+                <div class="features-list">
+                    <h3>Características Rápidas</h3>
+                    <ul>
+                        <li><i class="fas fa-scroll"></i> Más de 200 mods + 2 opcionales.</li>
+                        <li><i class="fas fa-tasks"></i> Progresión basada en misiones (guía, no obligatorias).</li>
+                        <li><i class="fas fa-clock"></i> Los días y noches duran 1 hora y 20 minutos.</li>
+                        <li><i class="fas fa-tree"></i> Los árboles caen de una (Treecapitator/similar).</li>
+                        <li><i class="fas fa-dragon"></i> Ice and Fire presente, pero generación natural desactivada. Solo dragones fase 4 en estructuras específicas y peligrosas.</li>
+                        <li><i class="fas fa-book-dead"></i> Libro inicial de Enigmatic Legacy sirve como arma cuerpo a cuerpo ígnea.</li>
+                        <li><i class="fas fa-snowflake"></i> Sistema de estaciones.</li>
+                        <li><i class="fas fa-biohazard"></i> Los <strong>Parásitos</strong> llegarán entre el día 31 y 60.</li>
+                        <li><i class="fas fa-headset"></i> Voice Chat (Configurar con tecla 'V').</li>
+                        <li><i class="fas fa-skull-crossbones"></i> NO hay mod para revivir jugadores (está bugeado).</li>
+                    </ul>
+                    <p class="note-text">Nota: Algunas recetas iniciales han sido cambiadas para integración. Sigue el principio de las misiones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mecanicas" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title fade-in">Dificultad y <span class="text-danger">Maldiciones</span></h2>
+            
+            <div class="mechanic-box fade-in">
+                <h3><i class="fas fa-ring"></i> Accesorios Iniciales</h3>
+                <p>Al aparecer en el mundo aparecerás con 2 accesorios:</p>
+                <div class="accessories-grid">
+                    <div class="acc-item">
+                        <h4>El Collar (Estadística Aleatoria)</h4>
+                        <ul>
+                            <li><span style="color:red">Rojo:</span> +1,5 daño base</li>
+                            <li><span style="color:cyan">Celeste:</span> +15% velocidad al correr</li>
+                            <li><span style="color:purple">Morado:</span> +15% oportunidad de desviar</li>
+                            <li><span style="color:violet">Violeta:</span> -15% gravedad</li>
+                            <li><span style="color:green">Verde:</span> +25% velocidad al minar</li>
+                            <li><span style="color:black">Negro:</span> +10% robo de vida</li>
+                            <li><span style="color:blue">Azul:</span> +25% velocidad al nadar</li>
+                        </ul>
+                    </div>
+                    <div class="acc-item cursed-ring">
+                        <h4>El Anillo de las 7 Maldiciones</h4>
+                        <p>Te dará el modo maldito (beneficios y maldiciones). Una vez colocado, es <strong>PERMANENTE</strong>. Permite usar objetos OP a cambio de riesgo de morir de un golpe.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="curses-blessings-grid fade-in">
+                <div class="cb-col curses text-danger">
+                    <h3><i class="fas fa-skull"></i> Siete Maldiciones</h3>
+                    <ul>
+                        <li>Recibes el DOBLE de daño de CUALQUIER fuente.</li>
+                        <li>Las criaturas neutrales son agresivas contigo.</li>
+                        <li>La armadura es un 30% menos efectiva.</li>
+                        <li>Los monstruos reciben un 50% menos de daño de tu parte.</li>
+                        <li>Cuando estás en llamas, ardes para siempre.</li>
+                        <li>Cada muerte destroza tu alma.</li>
+                        <li>Sufres de insomnio incurable.</li>
+                    </ul>
+                </div>
+                <div class="cb-col blessings text-highlight">
+                    <h3><i class="fas fa-pray"></i> Siete Bendiciones</h3>
+                    <ul>
+                        <li>+1 Nivel de Saqueo.</li>
+                        <li>+1 Nivel de Fortuna.</li>
+                        <li>+400% de experiencia obtenida.</li>
+                        <li>+10 Poder de Encantamiento en la Tabla.</li>
+                        <li>Objetos únicos de algunas criaturas.</li>
+                        <li>Funcionalidad del Anillo de Ender.</li>
+                        <li>Puedes crear y usar pátinas únicas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mechanic-box difficulty-scaling fade-in mt-4">
+                <h3><i class="fas fa-chart-line"></i> Dificultad Escalable (Difficulty 0.0)</h3>
+                <p>En la parte superior de tu pantalla observarás un contador que aumenta con el tiempo (0.1, 0.2, etc.).</p>
+                <p>Esto indica la dificultad general. Con el tiempo, los mobs podrán:</p>
+                <ul>
+                    <li>Colocar y romper bloques.</li>
+                    <li>Tener más vida y daño.</li>
+                    <li>Usar habilidades PVP, caña de pescar, enderpearls, TNT, telarañas, etc.</li>
+                </ul>
+                <p><em>Al principio son raros, pero con el tiempo se vuelven más frecuentes.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trailer" class="section-padding bg-dark text-center">
+        <div class="container fade-in">
+            <h2 class="section-title">Tráiler del Servidor</h2>
+            
+            <div class="video-container">
+                 <iframe src="https://drive.google.com/file/d/1trOHRTSYwB5mNCOWBUkm32d_UuHseWoz/preview" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="descarga" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title fade-in">Protocolo de <span class="text-danger">Instalación</span></h2>
+            
+            <div class="download-guide fade-in">
+                <div class="steps">
+                    <h3>Pasos para instalar:</h3>
+                    <ol>
+                        <li>Ve a tu Launcher de confianza (CurseForge recomendado para No-Premium).</li>
+                        <li><em>Si eres No-Premium, busca el botón "Importar" en tu launcher.</em></li>
+                        <li>Abre la carpeta de la instancia creada.</li>
+                        <li>Mueve dentro los archivos del modpack descargado.</li>
+                        <li>Ejecuta el juego.</li>
+                        <li>Dentro del juego, ve a <strong>Ajustes > Gráficos</strong> y coloca <strong>GUI Scale en 2</strong>.</li>
+                        <li><strong>IMPORTANTE:</strong> Si juegas en Un Jugador, coloca el tipo de mundo en "RTGC-New Realistic".</li>
+                    </ol>
+
+                    <div class="resource-pack-box">
+                        <h4>Orden de Resource Packs (Crucial)</h4>
+                        <p>Ve a Resource Packs y asegúrate de que estén activos en este orden exacto:</p>
+<pre><code>- extradynamic
+- better_helmets-Pack
+- srparasites+minimap+icons
+- srpmodernity
+- ntm vanilled
+- shrubs modernized ntm
+- animemis_srparasites
+- vagrant arsenal
+- animemis_inf_sw_blue
+- modernityadjunct
+- modernity</code></pre>
+                    </div>
+                </div>
+
+                <div class="download-options">
+                    <h3>Selecciona tu Versión</h3>
+                    <p class="text-muted">Solo versión en Español disponible.</p>
+
+                    <div class="version-card celeritas">
+                        <h4><i class="fas fa-bolt"></i> Versión Celeritas (Recomendada)</h4>
+                        <p>La versión original, perfectamente optimizada. Requiere <strong>Java 21</strong> (puede no ser compatible con todos los dispositivos).</p>
+                        <a href="https://drive.google.com/file/d/1ft2AsZSJjcCHkQVuJnb6sC6WpQPvMS4G/view?usp=sharing" target="_blank" class="btn btn-primary btn-block">Descargar Celeritas <i class="fas fa-download"></i></a>
+                    </div>
+
+                    <div class="version-card optifine mt-4">
+                        <h4><i class="fas fa-microchip"></i> Versión OptiFine</h4>
+                        <p>Pensada para quienes no pueden usar Java 21. <strong>Advertencia:</strong> Su optimización es mucho peor.</p>
+                        <a href="https://drive.google.com/file/d/1t5XKd7fukW572IHN6LX0CO3LNK5m0H-W/view?usp=sharing" target="_blank" class="btn btn-secondary btn-block">Descargar OptiFine <i class="fas fa-download"></i></a>
+                    </div>
+
+                    <div class="version-card extra-files mt-4" style="border: 1px dashed var(--text-muted);">
+                        <h4><i class="fas fa-folder-open"></i> Archivos de Raíz / Extra</h4>
+                        <p>Esto se coloca junto a la carpeta de config, mods, resource packs, etc. (La carpeta principal básicamente).</p>
+                        <a href="https://drive.google.com/file/d/1T2_hBYztAKsz1dfx-X7MGjPvwFKlJMJ5/view?usp=sharing" target="_blank" class="btn btn-secondary btn-block">Descargar Archivos Extra <i class="fas fa-download"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discord" class="section-padding discord-section text-center">
+        <div class="discord-bg" style="background-image: url('TU_ENLACE_IMAGEN_FONDO_DISCORD');"></div>
+        <div class="container discord-content fade-in">
+            <i class="fab fa-discord discord-icon"></i>
+            <h2 class="section-title">Únete al <span class="text-highlight">Discord</span></h2>
+            <p>Recibe actualizaciones, avances, habla con gente y organiza grupos. (El Discord puede llegar a cambiar).</p>
+            <a href="https://discord.gg/s8WfnJ4Jdk" target="_blank" class="btn btn-discord">Ingresar al Discord <i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer-credits bg-dark text-center">
+        <div class="container">
+            <p class="copyright text-muted mb-3">&copy; 2026 Proyecto Digamma.</p>
+            
+            <div class="credits-box">
+                <p class="credit-line">
+                    Modpack y Servidor por <span class="credit-name">@Terri1237</span>
+                </p>
+                <p class="credit-line">
+                    Por y para la comunidad de <span class="credit-name">@Tronkks</span>
+                </p>
+                <p class="credit-line special">
+                    Agradecimiento especial a <span class="credit-name">@Peterluisito</span> por hacer posible este proyecto.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
