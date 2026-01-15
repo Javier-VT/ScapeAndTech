@@ -19,11 +19,12 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#sobre-server" class="nav-link">Información</a></li>
-                <li><a href="#mecanicas" class="nav-link">Mecánicas y Dificultad</a></li>
+                <li><a href="#inicio" class="nav-link" data-translate="nav_home">Inicio</a></li>
+                <li><a href="#sobre-server" class="nav-link" data-translate="nav_info">Información</a></li>
+                <li><a href="#mecanicas" class="nav-link" data-translate="nav_mechanics">Mecánicas</a></li>
                 <li><a href="#discord" class="nav-link">Discord</a></li>
-                <li><a href="#descarga" class="nav-link btn-download-nav">Descargar</a></li>
+                <li><a href="#descarga" class="nav-link btn-download-nav" data-translate="nav_download">Descargar</a></li>
+                <li><button id="lang-btn" class="btn-lang">🇺🇸 EN</button></li>
             </ul>
         </div>
     </nav>
@@ -37,47 +38,47 @@
         
         <div class="hero-content container fade-in">
             <img src="src/title.png" alt="Logo Proyecto Digamma" class="hero-logo">
-            <h1>SOBREVIVE A LA <span class="text-danger">INFECCIÓN</span></h1>
-            <p class="hero-subtitle">HBM's Nuclear Tech + Scape and Run: Parasites. Tienes 60 días antes de que llegue del sistema Digamma.</p>
+            <h1 data-translate="hero_title">SOBREVIVE A LA <span class="text-danger">INFECCIÓN</span></h1>
+            <p class="hero-subtitle" data-translate="hero_subtitle">HBM's Nuclear Tech + Scape and Run: Parasites. Tienes 60 días antes de que llegue del sistema Digamma.</p>
             <div class="hero-buttons">
-                <a href="#descarga" class="btn btn-primary">Empezar la Misión <i class="fas fa-download"></i></a>
-                <a href="#trailer" class="btn btn-secondary">Ver Tráiler <i class="fas fa-play"></i></a>
+                <a href="#descarga" class="btn btn-primary" data-translate="btn_start">Empezar la Misión <i class="fas fa-download"></i></a>
+                <a href="#trailer" class="btn btn-secondary" data-translate="btn_trailer">Ver Tráiler <i class="fas fa-play"></i></a>
             </div>
-            <p class="server-ip"><i class="fas fa-server"></i> IP: Próximamente</p>
+            <p class="server-ip"><i class="fas fa-server"></i> IP: <span data-translate="ip_soon">Próximamente</span></p>
         </div>
     </section>
 
     <section id="sobre-server" class="section-padding bg-dark">
         <div class="container">
-            <h2 class="section-title fade-in">Información del <span class="text-highlight">Servidor</span></h2>
+            <h2 class="section-title fade-in" data-translate="section_info">Información del <span class="text-highlight">Servidor</span></h2>
             
             <div class="about-grid fade-in">
                 <div class="about-text">
-                    <h3>Enfoque Multijugador</h3>
-                    <p>Este modpack, especialmente en sus primeras versiones, está enfocado en un <strong>SERVER</strong>. Tenlo en cuenta si lo juegas solo. Incluye características para multijugador como facciones, voice chat y más.</p>
-                    <p>El lore se contará a medida que las misiones avancen, aunque se puede inferir viendo las estructuras custom y el entorno post-apocalíptico.</p>
+                    <h3 data-translate="info_multiplayer_title">Enfoque Multijugador</h3>
+                    <p data-translate="info_multiplayer_text">Este modpack, especialmente en sus primeras versiones, está enfocado en un <strong>SERVER</strong>. Tenlo en cuenta si lo juegas solo. Incluye características para multijugador como facciones, voice chat y más.</p>
+                    <p data-translate="info_lore_text">El lore se contará a medida que las misiones avancen, aunque se puede inferir viendo las estructuras custom y el entorno post-apocalíptico.</p>
                     
                     <div class="info-box">
                         <i class="fas fa-lightbulb text-highlight"></i>
-                        <p><strong>Consejo rápido:</strong> Puedes pregenerar el mundo colocando en el chat: <code>/pregen stat gen radius square 0 0 (cantidad de chunks)</code></p>
+                        <p><strong data-translate="info_tip_label">Consejo rápido:</strong> <span data-translate="info_tip_text">Puedes pregenerar el mundo colocando en el chat:</span> <code>/pregen stat gen radius square 0 0 (chunks)</code></p>
                     </div>
                 </div>
                 
                 <div class="features-list">
-                    <h3>Características Rápidas</h3>
+                    <h3 data-translate="info_features_title">Características Rápidas</h3>
                     <ul>
-                        <li><i class="fas fa-scroll"></i> Más de 200 mods + 2 opcionales.</li>
-                        <li><i class="fas fa-tasks"></i> Progresión basada en misiones (guía, no obligatorias).</li>
-                        <li><i class="fas fa-clock"></i> Los días y noches duran 1 hora y 20 minutos.</li>
-                        <li><i class="fas fa-tree"></i> Los árboles caen de una (Treecapitator/similar).</li>
-                        <li><i class="fas fa-dragon"></i> Ice and Fire presente, pero generación natural desactivada. Solo dragones fase 4 en estructuras específicas y peligrosas.</li>
-                        <li><i class="fas fa-book-dead"></i> Libro inicial de Enigmatic Legacy sirve como arma cuerpo a cuerpo ígnea.</li>
-                        <li><i class="fas fa-snowflake"></i> Sistema de estaciones.</li>
-                        <li><i class="fas fa-biohazard"></i> Los <strong>Parásitos</strong> llegarán entre el día 31 y 60.</li>
-                        <li><i class="fas fa-headset"></i> Voice Chat (Configurar con tecla 'V').</li>
-                        <li><i class="fas fa-skull-crossbones"></i> NO hay mod para revivir jugadores (está bugeado).</li>
+                        <li data-translate="feat_mods"><i class="fas fa-scroll"></i> Más de 200 mods + 2 opcionales.</li>
+                        <li data-translate="feat_quests"><i class="fas fa-tasks"></i> Progresión basada en misiones (guía, no obligatorias).</li>
+                        <li data-translate="feat_time"><i class="fas fa-clock"></i> Los días y noches duran 1 hora y 20 minutos.</li>
+                        <li data-translate="feat_trees"><i class="fas fa-tree"></i> Los árboles caen de una (Treecapitator/similar).</li>
+                        <li data-translate="feat_dragons"><i class="fas fa-dragon"></i> Ice and Fire presente, generación natural desactivada (Solo estructuras).</li>
+                        <li data-translate="feat_book"><i class="fas fa-book-dead"></i> Libro inicial de Enigmatic Legacy sirve como arma cuerpo a cuerpo ígnea.</li>
+                        <li data-translate="feat_seasons"><i class="fas fa-snowflake"></i> Sistema de estaciones.</li>
+                        <li data-translate="feat_parasites"><i class="fas fa-biohazard"></i> Los <strong>Parásitos</strong> llegarán entre el día 31 y 60.</li>
+                        <li data-translate="feat_voice"><i class="fas fa-headset"></i> Voice Chat (Configurar con tecla 'V').</li>
+                        <li data-translate="feat_revive"><i class="fas fa-skull-crossbones"></i> NO hay mod para revivir jugadores (está bugeado).</li>
                     </ul>
-                    <p class="note-text">Nota: Algunas recetas iniciales han sido cambiadas para integración. Sigue el principio de las misiones.</p>
+                    <p class="note-text" data-translate="feat_note">Nota: Algunas recetas iniciales han sido cambiadas para integración. Sigue el principio de las misiones.</p>
                 </div>
             </div>
         </div>
@@ -85,103 +86,96 @@
 
     <section id="mecanicas" class="section-padding bg-darker">
         <div class="container">
-            <h2 class="section-title fade-in">Dificultad y <span class="text-danger">Maldiciones</span></h2>
+            <h2 class="section-title fade-in" data-translate="section_mechanics">Dificultad y <span class="text-danger">Maldiciones</span></h2>
             
             <div class="mechanic-box fade-in">
-                <h3><i class="fas fa-ring"></i> Accesorios Iniciales</h3>
-                <p>Al aparecer en el mundo aparecerás con 2 accesorios:</p>
+                <h3><i class="fas fa-ring"></i> <span data-translate="mech_accessories_title">Accesorios Iniciales</span></h3>
+                <p data-translate="mech_accessories_desc">Al aparecer en el mundo aparecerás con 2 accesorios:</p>
                 <div class="accessories-grid">
                     <div class="acc-item">
-                        <h4>El Collar (Estadística Aleatoria)</h4>
+                        <h4 data-translate="mech_collar_title">El Collar (Estadística Aleatoria)</h4>
                         <ul>
-                            <li><span style="color:red">Rojo:</span> +1,5 daño base</li>
-                            <li><span style="color:cyan">Celeste:</span> +15% velocidad al correr</li>
-                            <li><span style="color:purple">Morado:</span> +15% oportunidad de desviar</li>
-                            <li><span style="color:violet">Violeta:</span> -15% gravedad</li>
-                            <li><span style="color:green">Verde:</span> +25% velocidad al minar</li>
-                            <li><span style="color:black">Negro:</span> +10% robo de vida</li>
-                            <li><span style="color:blue">Azul:</span> +25% velocidad al nadar</li>
+                            <li data-translate="col_red"><span style="color:red">Rojo:</span> +1,5 daño base</li>
+                            <li data-translate="col_cyan"><span style="color:cyan">Celeste:</span> +15% velocidad al correr</li>
+                            <li data-translate="col_purple"><span style="color:purple">Morado:</span> +15% oportunidad de desviar</li>
+                            <li data-translate="col_violet"><span style="color:violet">Violeta:</span> -15% gravedad</li>
+                            <li data-translate="col_green"><span style="color:green">Verde:</span> +25% velocidad al minar</li>
+                            <li data-translate="col_black"><span style="color:black">Negro:</span> +10% robo de vida</li>
+                            <li data-translate="col_blue"><span style="color:blue">Azul:</span> +25% velocidad al nadar</li>
                         </ul>
                     </div>
                     <div class="acc-item cursed-ring">
-                        <h4>El Anillo de las 7 Maldiciones</h4>
-                        <p>Te dará el modo maldito (beneficios y maldiciones). Una vez colocado, es <strong>PERMANENTE</strong>. Permite usar objetos OP a cambio de riesgo de morir de un golpe.</p>
+                        <h4 data-translate="mech_ring_title">El Anillo de las 7 Maldiciones</h4>
+                        <p data-translate="mech_ring_desc">Te dará el modo maldito. Una vez colocado, es <strong>PERMANENTE</strong>. Permite usar objetos OP a cambio de riesgo de morir de un golpe.</p>
                     </div>
                 </div>
             </div>
 
             <div class="curses-blessings-grid fade-in">
                 <div class="cb-col curses text-danger">
-                    <h3><i class="fas fa-skull"></i> Siete Maldiciones</h3>
+                    <h3><i class="fas fa-skull"></i> <span data-translate="mech_curses_title">Siete Maldiciones</span></h3>
                     <ul>
-                        <li>Recibes el DOBLE de daño de CUALQUIER fuente.</li>
-                        <li>Las criaturas neutrales son agresivas contigo.</li>
-                        <li>La armadura es un 30% menos efectiva.</li>
-                        <li>Los monstruos reciben un 50% menos de daño de tu parte.</li>
-                        <li>Cuando estás en llamas, ardes para siempre.</li>
-                        <li>Cada muerte destroza tu alma.</li>
-                        <li>Sufres de insomnio incurable.</li>
+                        <li data-translate="curse_1">Recibes el DOBLE de daño de CUALQUIER fuente.</li>
+                        <li data-translate="curse_2">Las criaturas neutrales son agresivas contigo.</li>
+                        <li data-translate="curse_3">La armadura es un 30% menos efectiva.</li>
+                        <li data-translate="curse_4">Los monstruos reciben un 50% menos de daño de tu parte.</li>
+                        <li data-translate="curse_5">Cuando estás en llamas, ardes para siempre.</li>
+                        <li data-translate="curse_6">Cada muerte destroza tu alma.</li>
+                        <li data-translate="curse_7">Sufres de insomnio incurable.</li>
                     </ul>
                 </div>
                 <div class="cb-col blessings text-highlight">
-                    <h3><i class="fas fa-pray"></i> Siete Bendiciones</h3>
+                    <h3><i class="fas fa-pray"></i> <span data-translate="mech_blessings_title">Siete Bendiciones</span></h3>
                     <ul>
-                        <li>+1 Nivel de Saqueo.</li>
-                        <li>+1 Nivel de Fortuna.</li>
-                        <li>+400% de experiencia obtenida.</li>
-                        <li>+10 Poder de Encantamiento en la Tabla.</li>
-                        <li>Objetos únicos de algunas criaturas.</li>
-                        <li>Funcionalidad del Anillo de Ender.</li>
-                        <li>Puedes crear y usar pátinas únicas.</li>
+                        <li data-translate="bless_1">+1 Nivel de Saqueo.</li>
+                        <li data-translate="bless_2">+1 Nivel de Fortuna.</li>
+                        <li data-translate="bless_3">+400% de experiencia obtenida.</li>
+                        <li data-translate="bless_4">+10 Poder de Encantamiento en la Tabla.</li>
+                        <li data-translate="bless_5">Objetos únicos de algunas criaturas.</li>
+                        <li data-translate="bless_6">Funcionalidad del Anillo de Ender.</li>
+                        <li data-translate="bless_7">Puedes crear y usar pátinas únicas.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="mechanic-box difficulty-scaling fade-in mt-4">
-                <h3><i class="fas fa-chart-line"></i> Dificultad Escalable (Difficulty 0.0)</h3>
-                <p>En la parte superior de tu pantalla observarás un contador que aumenta con el tiempo (0.1, 0.2, etc.).</p>
-                <p>Esto indica la dificultad general. Con el tiempo, los mobs podrán:</p>
-                <ul>
-                    <li>Colocar y romper bloques.</li>
-                    <li>Tener más vida y daño.</li>
-                    <li>Usar habilidades PVP, caña de pescar, enderpearls, TNT, telarañas, etc.</li>
-                </ul>
-                <p><em>Al principio son raros, pero con el tiempo se vuelven más frecuentes.</em></p>
+                <h3><i class="fas fa-chart-line"></i> <span data-translate="mech_diff_title">Dificultad Escalable (Difficulty 0.0)</span></h3>
+                <p data-translate="mech_diff_desc1">En la parte superior de tu pantalla observarás un contador que aumenta con el tiempo (0.1, 0.2, etc.).</p>
+                <p data-translate="mech_diff_desc2">Esto indica la dificultad general. Con el tiempo, los mobs podrán colocar bloques, romperlos, usar TNT, etc.</p>
+                <p><em data-translate="mech_diff_note">Al principio son raros, pero con el tiempo se vuelven más frecuentes.</em></p>
             </div>
         </div>
     </section>
 
     <section id="trailer" class="section-padding bg-dark text-center">
         <div class="container fade-in">
-            <h2 class="section-title">Tráiler del Servidor</h2>
-            
+            <h2 class="section-title" data-translate="section_trailer">Tráiler del Servidor</h2>
             <div class="video-container">
                  <iframe src="https://drive.google.com/file/d/1trOHRTSYwB5mNCOWBUkm32d_UuHseWoz/preview" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            
         </div>
     </section>
 
     <section id="descarga" class="section-padding bg-darker">
         <div class="container">
-            <h2 class="section-title fade-in">Protocolo de <span class="text-danger">Instalación</span></h2>
+            <h2 class="section-title fade-in" data-translate="section_install">Protocolo de <span class="text-danger">Instalación</span></h2>
             
             <div class="download-guide fade-in">
                 <div class="steps">
-                    <h3>Pasos para instalar:</h3>
+                    <h3 data-translate="steps_title">Pasos para instalar:</h3>
                     <ol>
-                        <li>Ve a tu Launcher de confianza ( <a href="https://youtu.be/eksDTLG7P7M?si=4GUI9yzdo8n_cuLk" target="_blank" style="color: var(--primary-color); text-decoration: underline;">Tutorial de CurseForge recomendado para No-Premium</a>).</li>
-                        <li><em>Si eres No-Premium, busca el botón "Importar" en tu launcher.</em></li>
-                        <li>Abre la carpeta de la instancia creada.</li>
-                        <li>Mueve dentro los archivos del modpack descargado.</li>
-                        <li>Ejecuta el juego.</li>
-                        <li>Dentro del juego, ve a <strong>Ajustes > Gráficos</strong> y coloca <strong>GUI Scale en 2</strong>.</li>
-                        <li><strong>IMPORTANTE:</strong> Si juegas en Un Jugador, coloca el tipo de mundo en "RTGC-New Realistic".</li>
+                        <li><span data-translate="step_1">Ve a tu Launcher de confianza.</span> (<a href="https://youtu.be/eksDTLG7P7M?si=4GUI9yzdo8n_cuLk" target="_blank" style="color: var(--primary-color); text-decoration: underline;" data-translate="step_1_link">Tutorial No-Premium</a>).</li>
+                        <li><em data-translate="step_2">Si eres No-Premium, busca el botón "Importar" en tu launcher.</em></li>
+                        <li data-translate="step_3">Abre la carpeta de la instancia creada.</li>
+                        <li data-translate="step_4">Mueve dentro los archivos del modpack descargado.</li>
+                        <li data-translate="step_5">Ejecuta el juego.</li>
+                        <li data-translate="step_6">Dentro del juego, ve a <strong>Ajustes > Gráficos</strong> y coloca <strong>GUI Scale en 2</strong>.</li>
+                        <li><strong data-translate="step_7_bold">IMPORTANTE:</strong> <span data-translate="step_7">Si juegas en Un Jugador, coloca el tipo de mundo en "RTGC-New Realistic".</span></li>
                     </ol>
 
                     <div class="resource-pack-box">
-                        <h4>Orden de Resource Packs (Crucial)</h4>
-                        <p>Ve a Resource Packs y asegúrate de que estén activos en este orden exacto:</p>
+                        <h4 data-translate="rp_title">Orden de Resource Packs (Crucial)</h4>
+                        <p data-translate="rp_desc">Ve a Resource Packs y asegúrate de que estén activos en este orden exacto:</p>
 <pre><code>- extradynamic
 - better_helmets-Pack
 - srparasites+minimap+icons
@@ -197,25 +191,25 @@
                 </div>
 
                 <div class="download-options">
-                    <h3>Selecciona tu Versión</h3>
-                    <p class="text-muted">Solo versión en Español disponible.</p>
+                    <h3 data-translate="version_select">Selecciona tu Versión</h3>
+                    <p class="text-muted" data-translate="version_note">Solo versión en Español disponible.</p>
 
                     <div class="version-card celeritas">
-                        <h4><i class="fas fa-bolt"></i> Versión Celeritas (Recomendada)</h4>
-                        <p>La versión original, perfectamente optimizada. Requiere <strong>Java 21</strong> (puede no ser compatible con todos los dispositivos).</p>
-                        <a href="https://drive.google.com/file/d/1rO7OPUD6ROvFs6dxCYmuOv9rXR92Uitn/view?usp=sharing" target="_blank" class="btn btn-primary btn-block">Descargar Celeritas <i class="fas fa-download"></i></a>
+                        <h4><i class="fas fa-bolt"></i> <span data-translate="ver_celeritas_title">Versión Celeritas (Recomendada)</span></h4>
+                        <p data-translate="ver_celeritas_desc">La versión original, perfectamente optimizada. Requiere <strong>Java 21</strong>.</p>
+                        <a href="https://drive.google.com/file/d/1rO7OPUD6ROvFs6dxCYmuOv9rXR92Uitn/view?usp=sharing" target="_blank" class="btn btn-primary btn-block" data-translate="btn_download_celeritas">Descargar Celeritas <i class="fas fa-download"></i></a>
                     </div>
 
                     <div class="version-card optifine mt-4">
-                        <h4><i class="fas fa-microchip"></i> Versión OptiFine</h4>
-                        <p>Pensada para quienes no pueden usar Java 21. <strong>Advertencia:</strong> Su optimización es mucho peor.</p>
-                        <a href="https://drive.google.com/file/d/19dN2w2gkaIO65Zf5yReC6v1FY44z9DZH/view?usp=sharing" target="_blank" class="btn btn-secondary btn-block">Descargar OptiFine <i class="fas fa-download"></i></a>
+                        <h4><i class="fas fa-microchip"></i> <span data-translate="ver_optifine_title">Versión OptiFine</span></h4>
+                        <p data-translate="ver_optifine_desc">Pensada para quienes no pueden usar Java 21. <strong>Advertencia:</strong> Peor optimización.</p>
+                        <a href="https://drive.google.com/file/d/19dN2w2gkaIO65Zf5yReC6v1FY44z9DZH/view?usp=sharing" target="_blank" class="btn btn-secondary btn-block" data-translate="btn_download_optifine">Descargar OptiFine <i class="fas fa-download"></i></a>
                     </div>
 
                     <div class="version-card extra-files mt-4" style="border: 1px dashed var(--text-muted);">
-                        <h4><i class="fas fa-file-audio"></i> Música custom (viene por separado)</h4>
-                        <p>Esto se coloca junto a la carpeta de config, mods, resource packs, etc. (La carpeta principal básicamente).</p>
-                        <a href="https://drive.google.com/file/d/1T2_hBYztAKsz1dfx-X7MGjPvwFKlJMJ5/view?usp=sharing" target="_blank" class="btn btn-secondary btn-block">Descargar Archivos Extra <i class="fas fa-download"></i></a>
+                        <h4><i class="fas fa-file-audio"></i> <span data-translate="ver_extra_title">Música custom (viene por separado)</span></h4>
+                        <p data-translate="ver_extra_desc">Esto se coloca junto a la carpeta de config, mods, resource packs, etc.</p>
+                        <a href="https://drive.google.com/file/d/1T2_hBYztAKsz1dfx-X7MGjPvwFKlJMJ5/view?usp=sharing" target="_blank" class="btn btn-secondary btn-block" data-translate="btn_download_extra">Descargar Archivos Extra <i class="fas fa-download"></i></a>
                     </div>
 
                 </div>
@@ -227,9 +221,9 @@
         <div class="discord-bg" style="background-image: url('TU_ENLACE_IMAGEN_FONDO_DISCORD');"></div>
         <div class="container discord-content fade-in">
             <i class="fab fa-discord discord-icon"></i>
-            <h2 class="section-title">Únete al <span class="text-highlight">Discord</span></h2>
-            <p>Recibe actualizaciones, avances, habla con gente y organiza grupos. (El Discord puede llegar a cambiar).</p>
-            <a href="https://discord.gg/s8WfnJ4Jdk" target="_blank" class="btn btn-discord">Ingresar al Discord <i class="fas fa-external-link-alt"></i></a>
+            <h2 class="section-title" data-translate="discord_title">Únete al <span class="text-highlight">Discord</span></h2>
+            <p data-translate="discord_desc">Recibe actualizaciones, avances, habla con gente y organiza grupos.</p>
+            <a href="https://discord.gg/s8WfnJ4Jdk" target="_blank" class="btn btn-discord" data-translate="btn_discord">Ingresar al Discord <i class="fas fa-external-link-alt"></i></a>
         </div>
     </section>
 
@@ -239,16 +233,16 @@
             
             <div class="credits-box">
                 <p class="credit-line">
-                    Modpack y Servidor por <span class="credit-name">@Terri1237</span>
+                    <span data-translate="credit_modpack">Modpack y Servidor por</span> <span class="credit-name">@Terri1237</span>
                 </p>
                 <p class="credit-line">
-                    Por y para la comunidad de <span class="credit-name">@Tronkks</span>
+                    <span data-translate="credit_community">Por y para la comunidad de</span> <span class="credit-name">@Tronkks</span>
                 </p>
                 <p class="credit-line special">
-                    Agradecimiento especial a <span class="credit-name">@Peterluisito</span> por hacer posible este proyecto.
+                    <span data-translate="credit_thanks">Agradecimiento especial a</span> <span class="credit-name">@Peterluisito</span> <span data-translate="credit_possible">por hacer posible este proyecto.</span>
                 </p>
                 <p class="credit-line special">
-                    Página por <span class="credit-name">@xRealSlayer</span>
+                    <span data-translate="credit_web">Página por</span> <span class="credit-name">@xRealSlayer</span>
                 </p>
             </div>
         </div>
