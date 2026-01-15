@@ -135,7 +135,6 @@ const translations = {
         rp_desc: "Ve a Resource Packs y asegúrate de que estén activos en este orden exacto:",
         
         version_select: "Selecciona tu Versión",
-        version_note: "Solo versión en Español disponible.",
         
         ver_celeritas_title: "Versión Celeritas (Recomendada)",
         ver_celeritas_desc: "La versión original, perfectamente optimizada. Requiere <strong>Java 21</strong>.",
@@ -247,7 +246,6 @@ const translations = {
         rp_desc: "Go to Resource Packs and ensure they are active in this exact order:",
         
         version_select: "Select your Version",
-        version_note: "Only Spanish version available (Modpack language).",
         
         ver_celeritas_title: "Celeritas Version (Recommended)",
         ver_celeritas_desc: "Original version, perfectly optimized. Requires <strong>Java 21</strong>.",
