@@ -466,7 +466,7 @@ p {
 @media screen and (max-width: 768px) {
     .hero-logo {
         max-width: 400px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
     }
 }
 
