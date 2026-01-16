@@ -44,7 +44,16 @@ video.addEventListener('error', function() {
     console.log('El video de fondo no pudo cargarse o no es compatible.');
 });
 
-// --- LÓGICA DE TRADUCCIÓN ---
+const LINKS = {
+    es: {
+        celeritas: "https://drive.google.com/file/d/1FaUNqLi5VRBSE9MApTL_CnHrXN1rwHEe/view?usp=sharing",
+        optifine: "https://drive.google.com/file/d/1Yd6d61DK5aq8CMZCvvovdB0F1TLFpX1X/view?usp=drivesdk"
+    },
+    en: {
+        celeritas: "https://drive.google.com/file/d/1ceyKA156a4V8zxyz0zleSzoHoupdMJM9/view?usp=drivesdk",
+        optifine: "https://drive.google.com/file/d/1xjKMtWRY5sNIgDrjWBZEytDfdoak66rJ/view?usp=drivesdk"
+    }
+};
 
 const translations = {
     es: {
@@ -147,6 +156,10 @@ const translations = {
         ver_extra_title: "Música custom (viene por separado)",
         ver_extra_desc: "Esto se coloca junto a la carpeta de config, mods, resource packs, etc.",
         btn_download_extra: "Descargar Archivos Extra <i class='fas fa-download'></i>",
+        btn_download_ambience: "Descargar Mod Ambience (Opcional) <i class='fas fa-external-link-alt'></i>",
+
+        warn_title: "ADVERTENCIA",
+        warn_desc: "Si usted se encuentra en una estructura un <strong>horno eléctrico</strong>, <span class='text-danger'>NO interactúe con él</span>, crasheará el server/cliente. Si se llega a encontrar con uno, rómpalo. Solo ocurre en estructuras, no cuando es colocado por el jugador.",
         
         discord_title: "Únete al <span class='text-highlight'>Discord</span>",
         discord_desc: "Recibe actualizaciones, avances, habla con gente y organiza grupos.",
@@ -258,6 +271,10 @@ const translations = {
         ver_extra_title: "Custom Music (Separate Download)",
         ver_extra_desc: "Place this next to config, mods, resource packs, etc folders.",
         btn_download_extra: "Download Extra Files <i class='fas fa-download'></i>",
+        btn_download_ambience: "Download Ambience Mod (Optional) <i class='fas fa-external-link-alt'></i>",
+
+        warn_title: "WARNING",
+        warn_desc: "If you find an <strong>Electric Furnace</strong> inside a structure, <span class='text-danger'>DO NOT interact with it</span>, it will crash the server/client. If you find one, break it immediately. This only happens in generated structures, not when placed by a player.",
         
         discord_title: "Join the <span class='text-highlight'>Discord</span>",
         discord_desc: "Get updates, sneak peeks, chat with people, and organize groups.",
@@ -274,14 +291,20 @@ const translations = {
 let currentLang = localStorage.getItem('lang') || 'es';
 const langBtn = document.getElementById('lang-btn');
 
+const btnCeleritas = document.getElementById('btn-celeritas');
+const btnOptifine = document.getElementById('btn-optifine');
+
 function updateLanguage(lang) {
     const elements = document.querySelectorAll('[data-translate]');
     elements.forEach(el => {
         const key = el.getAttribute('data-translate');
-        if (translations[lang][key]) {
+        if (translations[lang] && translations[lang][key]) {
             el.innerHTML = translations[lang][key];
         }
     });
+
+    if (btnCeleritas) btnCeleritas.href = LINKS[lang].celeritas;
+    if (btnOptifine) btnOptifine.href = LINKS[lang].optifine;
 
     if (lang === 'es') {
         langBtn.innerHTML = "🇺🇸 EN";

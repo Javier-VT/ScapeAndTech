@@ -176,42 +176,64 @@
                     <div class="resource-pack-box">
                         <h4 data-translate="rp_title">Orden de Resource Packs (Crucial)</h4>
                         <p data-translate="rp_desc">Ve a Resource Packs y asegúrate de que estén activos en este orden exacto:</p>
-<pre><code>- extradynamic
-- better_helmets-Pack
-- srparasites+minimap+icons
-- srpmodernity
-- ntm vanilled
-- shrubs modernized ntm
-- animemis_srparasites
-- vagrant arsenal
-- animemis_inf_sw_blue
-- modernityadjunct
-- modernity</code></pre>
+                        <pre><code>- extradynamic
+                        - better_helmets-Pack
+                        - srparasites+minimap+icons
+                        - srpmodernity
+                        - ntm vanilled
+                        - shrubs modernized ntm
+                        - animemis_srparasites
+                        - vagrant arsenal
+                        - animemis_inf_sw_blue
+                        - modernityadjunct
+                        - modernity</code></pre>
+                    </div>
+
+                    <div class="warning-box mt-4">
+                        <h4 class="text-danger"><i class="fas fa-exclamation-triangle"></i> <span data-translate="warn_title">ADVERTENCIA CRÍTICA</span></h4>
+                        
+                        <div class="warning-content">
+                            <p data-translate="warn_desc">
+                                Si usted se encuentra en una estructura un <strong>horno eléctrico</strong>, 
+                                <span class="text-danger">NO interactúe con él</span>, crasheará el server/cliente.
+                                Si se llega a encontrar con uno, rómpalo. Solo ocurre en estructuras, no cuando es colocado por el jugador.
+                            </p>
+                            
+                            <div class="warning-images">
+                                <img src="src/furnance_bug_1.png" alt="Horno Bug 1">
+                                <img src="src/furnance_bug_2.png" alt="Horno Bug 2">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="download-options">
                     <h3 data-translate="version_select">Selecciona tu Versión</h3>
+                    <p class="text-muted" data-translate="version_note">La descarga cambiará según el idioma seleccionado.</p>
 
                     <div class="version-card celeritas">
                         <h4><i class="fas fa-bolt"></i> <span data-translate="ver_celeritas_title">Versión Celeritas (Recomendada)</span></h4>
                         <p data-translate="ver_celeritas_desc">La versión original, perfectamente optimizada. Requiere <strong>Java 21</strong>.</p>
-                        <a href="https://drive.google.com/file/d/1rO7OPUD6ROvFs6dxCYmuOv9rXR92Uitn/view?usp=sharing" target="_blank" class="btn btn-primary btn-block" data-translate="btn_download_celeritas">Descargar Celeritas <i class="fas fa-download"></i></a>
+                        <a id="btn-celeritas" href="#" target="_blank" class="btn btn-primary btn-block" data-translate="btn_download_celeritas">Descargar Celeritas <i class="fas fa-download"></i></a>
                     </div>
 
                     <div class="version-card optifine mt-4">
                         <h4><i class="fas fa-microchip"></i> <span data-translate="ver_optifine_title">Versión OptiFine</span></h4>
                         <p data-translate="ver_optifine_desc">Pensada para quienes no pueden usar Java 21. <strong>Advertencia:</strong> Peor optimización.</p>
-                        <a href="https://drive.google.com/file/d/19dN2w2gkaIO65Zf5yReC6v1FY44z9DZH/view?usp=sharing" target="_blank" class="btn btn-secondary btn-block" data-translate="btn_download_optifine">Descargar OptiFine <i class="fas fa-download"></i></a>
+                        <a id="btn-optifine" href="#" target="_blank" class="btn btn-secondary btn-block" data-translate="btn_download_optifine">Descargar OptiFine <i class="fas fa-download"></i></a>
                     </div>
 
                     <div class="version-card extra-files mt-4" style="border: 1px dashed var(--text-muted);">
                         <h4><i class="fas fa-file-audio"></i> <span data-translate="ver_extra_title">Música custom (viene por separado)</span></h4>
                         <p data-translate="ver_extra_desc">Esto se coloca junto a la carpeta de config, mods, resource packs, etc.</p>
+                        
                         <a href="https://drive.google.com/file/d/1T2_hBYztAKsz1dfx-X7MGjPvwFKlJMJ5/view?usp=sharing" target="_blank" class="btn btn-secondary btn-block" data-translate="btn_download_extra">Descargar Archivos Extra <i class="fas fa-download"></i></a>
+                        
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/ambience-extras/files/3128479" target="_blank" class="btn btn-secondary btn-block" style="margin-top: 10px;" data-translate="btn_download_ambience">Descargar Mod Ambience (Opcional) <i class="fas fa-external-link-alt"></i></a>
                     </div>
 
                 </div>
+
             </div>
         </div>
     </section>
