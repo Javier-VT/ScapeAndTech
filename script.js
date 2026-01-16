@@ -156,7 +156,7 @@ const translations = {
         ver_extra_title: "Música custom (viene por separado)",
         ver_extra_desc: "Esto se coloca junto a la carpeta de config, mods, resource packs, etc.",
         btn_download_extra: "Descargar Archivos Extra <i class='fas fa-download'></i>",
-        btn_download_ambience: "Descargar Mod Ambience (Opcional) <i class='fas fa-external-link-alt'></i>",
+        btn_download_ambience: "Descargar Mod Ambience (Opcional, nesesario solo si quieres la musica) <i class='fas fa-external-link-alt'></i>",
 
         warn_title: "ADVERTENCIA",
         warn_desc: "Si usted se encuentra en una estructura un <strong>horno eléctrico</strong>, <span class='text-danger'>NO interactúe con él</span>, crasheará el server/cliente. Si se llega a encontrar con uno, rómpalo. Solo ocurre en estructuras, no cuando es colocado por el jugador.",
@@ -271,7 +271,7 @@ const translations = {
         ver_extra_title: "Custom Music (Separate Download)",
         ver_extra_desc: "Place this next to config, mods, resource packs, etc folders.",
         btn_download_extra: "Download Extra Files <i class='fas fa-download'></i>",
-        btn_download_ambience: "Download Ambience Mod (Optional) <i class='fas fa-external-link-alt'></i>",
+        btn_download_ambience: "Download Ambience Mod (Optional, required only if you want the music) <i class='fas fa-external-link-alt'></i>",
 
         warn_title: "WARNING",
         warn_desc: "If you find an <strong>Electric Furnace</strong> inside a structure, <span class='text-danger'>DO NOT interact with it</span>, it will crash the server/client. If you find one, break it immediately. This only happens in generated structures, not when placed by a player.",
