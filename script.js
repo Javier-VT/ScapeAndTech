@@ -169,6 +169,7 @@ const translations = {
         credit_community: "Por y para la comunidad de",
         credit_thanks: "Agradecimiento especial a",
         credit_possible: "por hacer posible este proyecto.",
+        credit_traduction: "Agradecimiento por el apoyo a la traducción para ",
         credit_web: "Página por"
     },
     en: {
@@ -284,6 +285,7 @@ const translations = {
         credit_community: "By and for the community of",
         credit_thanks: "Special thanks to",
         credit_possible: "for making this project possible.",
+        credit_traduction: "Thanks for helping translate",
         credit_web: "Website by"
     }
 };
