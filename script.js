@@ -66,7 +66,7 @@ const translations = {
         hero_subtitle: "HBM's Nuclear Tech + Scape and Run: Parasites. Tienes 60 días antes de que llegue del sistema Digamma.",
         btn_start: "Empezar la Misión <i class='fas fa-download'></i>",
         btn_trailer: "Ver Tráiler <i class='fas fa-play'></i>",
-        ip_soon: "Próximamente",
+        ip_soon: "satom.holy.gg",
         
         section_info: "Información del <span class='text-highlight'>Servidor</span>",
         info_multiplayer_title: "Enfoque Multijugador",
@@ -182,7 +182,7 @@ const translations = {
         hero_subtitle: "HBM's Nuclear Tech + Scape and Run: Parasites. You have 60 days before the Digamma system arrives.",
         btn_start: "Start Mission <i class='fas fa-download'></i>",
         btn_trailer: "Watch Trailer <i class='fas fa-play'></i>",
-        ip_soon: "Coming Soon",
+        ip_soon: "satom.holy.gg",
         
         section_info: "<span class='text-highlight'>Server</span> Information",
         info_multiplayer_title: "Multiplayer Focus",
